@@ -3,8 +3,6 @@ import { ArrowUpRight, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Logo, LogoMark } from "@/components/brand/Logo";
 import { countries } from "@/data/countries";
 import { offices, primaryNav, secondaryNav, site } from "@/data/site";
-import { CookieSettingsButton } from "./CookieConsent";
-
 export function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-ink-950 pt-20">
@@ -82,7 +80,6 @@ export function Footer() {
           <div className="flex flex-wrap items-center gap-5">
             <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white">Terms of Service</Link>
-            <CookieSettingsButton />
             <Link href="/sitemap.xml" className="inline-flex items-center gap-1 hover:text-white">
               Sitemap <ArrowUpRight className="h-3 w-3" />
             </Link>
